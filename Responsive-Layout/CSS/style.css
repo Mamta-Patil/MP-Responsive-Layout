@@ -1,0 +1,96 @@
+*
+{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    text-decoration: none;
+    color:white;
+}
+.header
+{
+    width: 100%;
+}
+body
+{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('/IMAGES/university.avif');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width:100%;
+}
+.contener
+{
+    width:80%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+.logo
+{
+    width:100px;
+    height: 100px;
+}
+.logo img
+{
+    height: 100%;
+    width:100%;
+}
+.navbar ul
+{
+   list-style: none;
+   display: flex;
+}
+.navbar ul li
+{
+    padding: 10px 20px;
+    
+}
+li::after
+{
+    content:'';
+    margin:auto;
+    height:2px;
+    width: 0%;
+    background-color: red;
+    display: block;
+    transition: all 0.3s;
+}
+li:hover::after
+{
+    width:100%;
+}
+.contant
+{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left:50%;
+}
+.contant h1
+{
+text-align: center;
+font-size: 40px;
+}
+.contant p
+{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 15px;
+}
+.btn
+{
+    width: 280px;
+    padding: 10px 20px;
+    border:2px solid black;
+    position:relative;
+    margin:20px auto;
+}
+.btn:hover
+{
+    background-color: red;
+    border:2px solid rgba(0, 0, 0, 0);
+}
